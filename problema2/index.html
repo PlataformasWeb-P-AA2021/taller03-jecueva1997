@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Datepicker - Default functionality</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="estilos/estilos.css" type="text/css" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+
+    </head>
+    
+    <body>
+        <p>Nombre: <input type="text" id="Name"></p>
+        <p>Apellido: <input type="text" id="Apellido"></p>
+        <p>Date: <input type="text" id="datepicker"></p>
+        <button type="submit">Generar Mensaje</button>
+        <p id="mensajeFinal"></p>
+    </body>
+
+    <script>
+        $(document).ready(function() {
+            $( function() {
+                $( "#datepicker" ).datepicker();
+                $( "button" ).click(function() {
+                    var texto1 = $('#Name').val();
+                    var texto2 = $('#Apellido').val();
+                    var texto3 = $("#datepicker").val();
+                    $('#mensajeFinal').val("Nombre: " + texto1 + ". Apellido: " + texto2 + "Fecha: " + texto3);
+                    console.log(texto1);
+                    console.log(texto2);
+                    console.log(texto3);
+                });
+            });
+        });
+    </script>
+   
+
+</html>
+

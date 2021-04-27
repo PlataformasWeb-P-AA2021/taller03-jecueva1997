@@ -1,0 +1,42 @@
+/* Estilos para la etiqueta body*/
+
+body {
+    background: #FEFEFD;
+    padding: 20px;
+}
+
+/* Estilos para la etiqueta <div> de la clase uno con borde y fondo */
+
+.uno{
+    border:3px solid #0A0A0A;
+    background-color: #9999FF;
+}
+
+/* Estilos para la etiqueta <p> que lleva por nombre mensaje para poner el estilo y color de letra */
+.mensaje{
+    background-color: #F3F3F3;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    border:3px solid#FFFF00;
+}
+
+/* Estilos para el segundo <div> que lleva por nombre dos para poner un fondo de color */
+.dos{
+    background-color:  #CE8845;
+}
+
+/* Estilos para la etiqueta <p> para el estilo del color de letra y los márgenes */
+.comentario{
+    color: white;
+    border-bottom: 4px solid #618421;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+
+
+
